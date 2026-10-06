@@ -1,0 +1,12 @@
+# Python dependencies for the Campus Customs backend (backend/).
+# Versions match the project's working .venv.
+# Install from hw4 with:  pip install -r requirements.txt
+# The frontend uses npm instead:  cd frontend && npm install
+
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+email-validator==2.3.0
+pydantic-ai-slim[openai]==2.51.0
+openai==3.20.0
+python-dotenv==1.2.3

@@ -1,0 +1,257 @@
+/* Final layout adjustments for the About page. */
+.about .about-grid {
+  display: block;
+  max-width: 940px;
+}
+
+.about .about-grid > div + div {
+  margin-top: 32px;
+}
+
+.about .about-grid ul + p {
+  margin-top: 12px;
+}
+
+.about .hours {
+  margin-top: 32px;
+}
+
+.detail .detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(330px, 0.9fr);
+  align-items: start;
+}
+
+@media (max-width: 650px) {
+  .detail .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.auth-message { margin: 0 0 16px; font-weight: 600; }
+.auth-message.error { color: #a22525; }
+.auth-message.success { color: #167044; }
+.account .button:disabled { opacity: .6; cursor: wait; }
+.chat-user-message { background: #dbeaf7; color: #132033; margin-left: 28px; border-radius: 10px 10px 2px 10px; }
+.chat-assistant-message { margin-right: 28px; }
+.chat-products { display: grid; gap: 8px; margin: 8px 0 12px; }
+.chat-product { display: grid; grid-template-columns: 42px 1fr auto; gap: 8px; align-items: center; width: 100%; padding: 6px; border: 1px solid #dbe1e8; background: #fff; color: #132033; text-align: left; font-size: 12px; }
+.chat-product:hover { border-color: #00356b; background: #f3f8fc; }
+.chat-product img { width: 42px; height: 42px; object-fit: cover; background: #eef2f5; }
+.chat-product span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chat-product strong { color: #00356b; }
+.product-controls { display: flex; gap: 12px; align-items: end; width: min(650px, 100%); }
+.category-filter { width: 220px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.category-filter select { display: block; width: 100%; margin-top: 6px; padding: 11px 12px; border: 1px solid #dbe1e8; background: #fff; border-radius: 2px; font-size: 16px; letter-spacing: normal; text-transform: none; font-weight: 400; }
+@media (max-width: 650px) { .product-controls { display: grid; width: 100%; } .category-filter { width: 100%; } }
+
+/* Yale visual language: a collegiate stripe field and old-style display face. */
+body { background: repeating-linear-gradient(135deg, #f8fbfe 0 32px, #e6f0f8 32px 64px); }
+.site { min-height: 100vh; }
+h1, h2, h3, .product-card .description, .detail-copy { font-family: "UnifrakturCook", "Old English Text MT", "Lucida Blackletter", Georgia, serif; letter-spacing: .015em; }
+.product-card .description, .detail-copy { line-height: 1.65; }
+
+.yale-footer { position: relative; display: grid; grid-template-columns: 1.25fr 1fr 190px; align-items: center; gap: 28px; overflow: hidden; min-height: 210px; padding: 30px clamp(20px, 5vw, 76px) 28px; border-top: 7px solid #b8d4e9; background: linear-gradient(110deg, #001f3f, #00356b); }
+.footer-intro { display: flex; align-items: center; gap: 14px; z-index: 1; }
+.footer-intro strong, .footer-intro span { display: block; }
+.footer-intro strong { font-family: Georgia, serif; letter-spacing: .12em; }
+.footer-intro span { color: #c8ddeb; font-size: 13px; }
+.footer-yale-mark { display: grid; place-items: center; width: 54px; height: 60px; clip-path: polygon(50% 0,100% 18%,100% 82%,50% 100%,0 82%,0 18%); background: #fff; color: #00356b; font: 700 39px Georgia, serif; }
+.yale-symbols { display: flex; align-items: center; gap: 12px; color: #fff; z-index: 1; }
+.shakespeare-mark, .book-quill { display: grid; place-items: center; width: 37px; height: 37px; border: 1px solid #9fc3df; border-radius: 50%; font-size: 19px; }
+.book-quill { position: relative; font-size: 23px; }
+.book-quill i { position: absolute; right: -4px; bottom: -5px; color: #b8d4e9; font-size: 16px; transform: rotate(-22deg); }
+.symbol-label { font-size: 12px; color: #c8ddeb; letter-spacing: .04em; }
+.new-haven-map { justify-self: end; width: 190px; color: #dcecf8; z-index: 1; }
+.new-haven-map svg { display: block; width: 100%; fill: none; stroke: #89b6d8; stroke-width: 1.5; }
+.new-haven-map svg circle { fill: #fff; stroke: #fff; }
+.new-haven-map .coast { stroke: #dcecf8; stroke-width: 2; }
+.new-haven-map .pin { fill: #fff; stroke: #fff; }
+.new-haven-map span { display: block; margin-top: -3px; text-align: center; font: 700 11px "DM Mono", monospace; letter-spacing: .04em; }
+.bulldog { position: absolute; right: 28%; bottom: -31px; width: 154px; height: 104px; opacity: .18; transform: rotate(-5deg); }
+.bulldog-face { position: absolute; inset: 16px 20px 0; display: block; border-radius: 46% 46% 42% 42%; background: #fff; }
+.bulldog-ear { position: absolute; top: 5px; width: 55px; height: 67px; border-radius: 55% 25% 40% 30%; background: #fff; }
+.bulldog-ear.left { left: 4px; transform: rotate(-28deg); }.bulldog-ear.right { right: 4px; transform: scaleX(-1) rotate(-28deg); }
+.eye { position: absolute; top: 34px; width: 10px; height: 10px; border-radius: 50%; background: #00356b; }.eye.left { left: 31px; }.eye.right { right: 31px; }
+.muzzle { position: absolute; left: calc(50% - 22px); bottom: 15px; width: 44px; height: 25px; border-radius: 48%; background: #c8ddeb; }
+.yale-footer > small { position: absolute; left: clamp(20px, 5vw, 76px); bottom: 12px; color: #a9c8df; }
+@media (max-width: 850px) { .yale-footer { grid-template-columns: 1fr 170px; }.yale-symbols { grid-column: 1 / -1; }.new-haven-map { width: 170px; }.bulldog { right: 12%; } }
+@media (max-width: 520px) { .yale-footer { display: flex; flex-direction: column; align-items: flex-start; gap: 15px; padding-bottom: 42px; }.new-haven-map { align-self: center; }.bulldog { right: -15px; opacity: .12; } }
+
+/* A clean, single Yale bulldog closes every page. */
+.yale-footer {
+  display: grid;
+  min-height: 164px;
+  padding: 22px;
+  place-items: center;
+  border-top: 5px solid #b8d4e9;
+  background: #00356b;
+}
+
+.footer-bulldog {
+  position: relative;
+  width: 128px;
+  height: 112px;
+  filter: drop-shadow(0 5px 0 rgba(0, 31, 63, .22));
+}
+
+.footer-bulldog .bulldog-face {
+  position: absolute;
+  inset: 19px 14px 0;
+  display: block;
+  border-radius: 46% 46% 42% 42%;
+  background: #fff;
+}
+
+.footer-bulldog .bulldog-ear {
+  position: absolute;
+  top: 6px;
+  width: 49px;
+  height: 64px;
+  border-radius: 55% 25% 40% 30%;
+  background: #fff;
+}
+
+.footer-bulldog .bulldog-ear.left { left: 1px; transform: rotate(-28deg); }
+.footer-bulldog .bulldog-ear.right { right: 1px; transform: scaleX(-1) rotate(-28deg); }
+.footer-bulldog .eye { position: absolute; top: 34px; width: 10px; height: 10px; border-radius: 50%; background: #00356b; }
+.footer-bulldog .eye.left { left: 26px; }
+.footer-bulldog .eye.right { right: 26px; }
+.footer-bulldog .muzzle { position: absolute; left: calc(50% - 20px); bottom: 16px; width: 40px; height: 23px; border-radius: 48%; background: #b8d4e9; }
+
+/* Rounded emoji-style bulldog face. */
+.footer-bulldog {
+  width: 160px;
+  height: 145px;
+  filter: drop-shadow(0 6px 0 rgba(0, 31, 63, .24));
+}
+
+.footer-bulldog .bulldog-face {
+  inset: 32px 18px 2px;
+  border-radius: 44% 44% 48% 48% / 42% 42% 55% 55%;
+  z-index: 2;
+}
+
+.footer-bulldog .bulldog-ear {
+  top: 4px;
+  width: 74px;
+  height: 96px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.footer-bulldog .bulldog-ear.left { left: 4px; transform: rotate(-23deg); }
+.footer-bulldog .bulldog-ear.right { right: 4px; transform: rotate(23deg); }
+.footer-bulldog .eye { top: 47px; width: 15px; height: 15px; background: #00356b; }
+.footer-bulldog .eye.left { left: 30px; }
+.footer-bulldog .eye.right { right: 30px; }
+.footer-bulldog .muzzle {
+  left: calc(50% - 31px);
+  bottom: 21px;
+  width: 62px;
+  height: 36px;
+  border-radius: 50%;
+  background: #b8d4e9;
+}
+
+.footer-bulldog-photo {
+  display: block;
+  width: min(280px, 76vw);
+  max-height: 190px;
+  object-fit: cover;
+  object-position: center 35%;
+  border: 4px solid #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 31, 63, .28);
+}
+
+.chat-panel .chat-close {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  background: rgba(0, 31, 63, .24);
+  color: #fff;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.chat-panel .chat-close:hover { background: #fff; color: #00356b; }
+
+.cart-button { margin-left: 8px; border: 1px solid #b8d4e9; color: #00356b; background: #fff; font-weight: 700; }
+.cart-button:hover { background: #eaf3fa; }
+.cart-drawer { position: fixed; top: 0; right: 0; z-index: 20; display: flex; flex-direction: column; width: min(390px, 92vw); height: 100vh; background: #fff; box-shadow: -8px 0 28px rgba(0, 31, 63, .25); }
+.cart-drawer header { display: flex; align-items: center; justify-content: space-between; padding: 18px 20px; background: #00356b; color: #fff; }
+.cart-drawer header h2 { margin: 0; font-family: Georgia, serif; }
+.cart-close { border: 0; background: transparent; color: #fff; font-size: 28px; line-height: 1; cursor: pointer; }
+.cart-items { overflow-y: auto; padding: 14px; }
+.cart-item { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; padding: 10px 0; border-bottom: 1px solid #dbe1e8; }
+.cart-item-link { display: grid; grid-template-columns: 58px 1fr; gap: 10px; align-items: center; border: 0; background: transparent; color: #132033; text-align: left; cursor: pointer; }
+.cart-item-link img { width: 58px; height: 58px; object-fit: cover; background: #eef2f5; }
+.cart-item-link strong { grid-column: 2; color: #00356b; }
+.cart-remove { border: 0; background: transparent; color: #8a2525; font-size: 12px; cursor: pointer; }
+.cart-empty { padding: 24px 20px; color: #536273; }
+.detail-cart-action { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(330px, .9fr); gap: 60px; max-width: 1280px; margin: -44px auto 44px; padding: 0 clamp(20px, 5vw, 76px); }
+.cart-add-panel { grid-column: 1; display: flex; align-items: end; justify-content: space-between; gap: 22px; width: 100%; padding: 20px 22px; border: 2px solid #00356b; background: #fff; box-shadow: 0 5px 14px rgba(0, 53, 107, .14); }
+.cart-size-label { display: block; margin-top: 8px; font-size: 13px; font-weight: 700; color: #00356b; }
+.cart-size-label select { display: block; min-width: 200px; margin-top: 5px; padding: 10px 12px; border: 1px solid #9db9d0; background: #fff; color: #132033; font-size: 15px; }
+.cart-add { min-width: 156px; min-height: 52px; margin: 0; font-size: 17px; font-weight: 700; }
+.cart-add-error { grid-column: 1; margin: 10px 0 0; color: #9c2020; font-weight: 700; }
+.cart-item-link small { display: block; margin-top: 3px; color: #536273; font-size: 12px; font-weight: 400; }
+@media (max-width: 650px) { .detail-cart-action { grid-template-columns: 1fr; margin-top: -24px; }.cart-add-panel, .cart-add-error { grid-column: 1; } }
+@media (max-width: 520px) { .cart-add-panel { align-items: stretch; flex-direction: column; }.cart-size-label select, .cart-add { width: 100%; } }
+
+/* Keep the close control visible even in a narrow or zoomed browser window. */
+.chat-panel { position: relative; }
+.chat-panel > header { min-height: 62px; padding-right: 58px; }
+.chat-panel > header > div { display: block; color: #fff; }
+.chat-panel .chat-close {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  z-index: 3;
+  visibility: visible;
+  opacity: 1;
+}
+
+.hero .login-notice {
+  display: inline-block;
+  margin: 2px 0 16px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .16);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* The Home-page links are a complete two-by-two panel, with no empty columns. */
+.intro .link-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-areas: "about products" "login create";
+  width: 100%;
+}
+
+/* Keep catalogue cards and the single-product view comfortably readable. */
+.product-card h3,
+.detail h1,
+.account h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: normal;
+}
+
+.product-card .description,
+.detail .detail-copy {
+  font-family: "Source Sans 3", Arial, sans-serif;
+  letter-spacing: normal;
+  line-height: 1.55;
+}
+
+@media (max-width: 520px) {
+  .intro .link-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "about" "products" "login" "create";
+  }
+}

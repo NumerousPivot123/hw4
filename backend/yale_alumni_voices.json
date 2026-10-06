@@ -1,0 +1,20 @@
+{
+  "verification_note": "Preliminary rotating-voice shortlist. Please verify or remove any entry before production use; each person is listed as a Yale alumnus based on public biographical references.",
+  "alumni": [
+    {"name": "David McCullough", "description": "a Pulitzer Prize-winning historian whose books brought pivotal moments in American history to a wide audience", "yale_credential": "B.A., Yale College", "category": "writer"},
+    {"name": "Meryl Streep", "description": "an Academy Award-winning actor celebrated for a remarkable range of performances on stage and screen", "yale_credential": "M.F.A., Yale School of Drama", "category": "arts"},
+    {"name": "Jodie Foster", "description": "an Academy Award-winning actor and filmmaker known for acclaimed work in film and television", "yale_credential": "B.A., Yale College", "category": "arts"},
+    {"name": "Lupita Nyong'o", "description": "an Academy Award-winning actor and producer whose work spans film, theater, and advocacy", "yale_credential": "M.F.A., Yale School of Drama", "category": "arts"},
+    {"name": "Angela Bassett", "description": "an award-winning actor whose career includes acclaimed portrayals in film, television, and theater", "yale_credential": "M.F.A., Yale School of Drama", "category": "arts"},
+    {"name": "Paul Giamatti", "description": "an actor and producer recognized for memorable dramatic and comic performances", "yale_credential": "B.A., Yale College", "category": "arts"},
+    {"name": "Edward Norton", "description": "an actor and filmmaker who has also supported environmental and conservation work", "yale_credential": "B.A., Yale College", "category": "arts"},
+    {"name": "Anderson Cooper", "description": "a journalist and television anchor known for reporting on major national and international events", "yale_credential": "B.A., Yale College", "category": "journalism"},
+    {"name": "Fareed Zakaria", "description": "a journalist and author who writes and broadcasts about international affairs", "yale_credential": "B.A., Yale College", "category": "journalism"},
+    {"name": "Maya Lin", "description": "an artist and designer best known for creating the Vietnam Veterans Memorial in Washington, D.C.", "yale_credential": "B.A., Yale College", "category": "design"},
+    {"name": "Indra Nooyi", "description": "a business leader who served as chair and chief executive officer of PepsiCo", "yale_credential": "M.P.P.M., Yale School of Management", "category": "business"},
+    {"name": "Janet Yellen", "description": "an economist who served as chair of the Federal Reserve and U.S. Secretary of the Treasury", "yale_credential": "Ph.D., Yale University", "category": "economics"},
+    {"name": "Ben Silbermann", "description": "an entrepreneur and co-founder of the visual-discovery platform Pinterest", "yale_credential": "B.A., Yale College", "category": "business"},
+    {"name": "Cole Porter", "description": "a composer and lyricist whose songs became enduring standards of American musical theater", "yale_credential": "B.A., Yale College", "category": "arts"},
+    {"name": "Noah Webster", "description": "a lexicographer and writer whose dictionary helped standardize American English", "yale_credential": "B.A., Yale College", "category": "writer"}
+  ]
+}

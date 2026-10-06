@@ -1,0 +1,26 @@
+# Secrets (share .env.example instead)
+.env
+.env.local
+frontend/.env
+frontend/.env.local
+
+# Database and product images (kept locally, not in the repo)
+data/
+*.db
+frontend/public/products/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
